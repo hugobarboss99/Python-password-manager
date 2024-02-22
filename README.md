@@ -33,21 +33,47 @@ To run the application, you need to have Python installed on your system along w
 
 ### Usage
 
-1. Run the application:
+#### Making an .exe using Nuitka
+
+[Nuitka](https://nuitka.net/) is a Python compiler that can compile Python code into native machine code, including creating standalone executables. Follow these steps to compile the Password Manager application into an .exe file using Nuitka:
+
+1. Install Nuitka:
+
+   ```
+   pip install nuitka
+   ```
+   
+1.2. Navigate to the directory containing the `management.py` file.
+
+1.3. Run the following command to compile the Python code into an executable:
+   
+   ```
+   python -m nuitka --recurse-all --follow-imports management.py
+   ```
+
+This command compiles the `management.py` script along with all its dependencies into a standalone executable.
+
+1.4. Once the compilation process is complete, you will find the generated executable file in the `./dist` directory.
+
+1.5. You can now run the Password Manager application by double-clicking on the generated .exe file.
+
+Note: Depending on your operating system and configuration, you may need to grant appropriate permissions to run the executable.
+
+2. (Second option) Run the application:
 
    ```
    python password_manager.py
    ```
 
-2. Log in with the default credentials:
+3. Log in with the default credentials:
 
    ```
    Login: admin
    Password: admin
    ```
 
-3. Change to your own login and password please.
-4. Use the interface to manage your passwords securely.
+4. Change to your own login and password please.
+5. Use the interface to manage your passwords securely.
 
 ### Contribution
 
