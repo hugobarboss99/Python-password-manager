@@ -22,7 +22,7 @@ To run the application, you need to have Python installed on your system along w
 1. Clone the repository to your local machine:
 
    ```
-   git clone https://github.com/your_username/password-manager.git
+   git clone https://github.com/hugobarboss99/Python-password-manager
    ```
 
 2. Install the required Python libraries:
