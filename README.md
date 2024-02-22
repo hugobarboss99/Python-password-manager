@@ -48,7 +48,7 @@ To run the application, you need to have Python installed on your system along w
 1.3. Run the following command to compile the Python code into an executable:
    
    ```
-   python -m nuitka --recurse-all --follow-imports management.py
+   nuitka --standalone --enable-plugin=tk-inter --windows-disable-console management.py
    ```
 
 This command compiles the `management.py` script along with all its dependencies into a standalone executable.
